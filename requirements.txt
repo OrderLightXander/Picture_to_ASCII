@@ -1,0 +1,2 @@
+py -m pip install Pillow
+py -m pip install click
