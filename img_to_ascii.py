@@ -26,7 +26,8 @@ def pixels_to_ascii(image):
 
 @click.command()
 @click.option('--new_width', default=100, help='This is width of ASCII image')
-def main(new_width):
+@click.option('--output_path', default='ascii_image.txt', help='This is a path where you save your ASCII image')
+def main(new_width, output_path):
     # attempt to open image from user-input
     path = input('Enter a valid pathname to an image:\n')
     try:
@@ -46,7 +47,7 @@ def main(new_width):
     print(ascii_image)
 
     # save result to "ascii_image.txt"
-    with open('ascii_image.txt', 'w') as f:
+    with open(output_path, 'w') as f:
         f.write(ascii_image)
 
 main()
