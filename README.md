@@ -1,2 +1,2 @@
 # Picture_to_ASCII
-It's a simple programm which is converting pictures to ASCII test
+It's a simple program which is converting pictures to ASCII test
